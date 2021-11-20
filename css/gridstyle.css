@@ -1,0 +1,31 @@
+.clr1{
+    background-color: purple;
+ 
+}
+.clr2{
+    background-color: pink;
+
+}
+.clr3{
+    background-color: azure;
+ 
+}
+.clr4{
+    background-color: burlywood;
+    
+}
+.container{
+    display:grid;
+    grid-template-columns:25% 25% 50%;
+
+    grid-gap:5px;
+    
+}
+@media screen and (max-width:700px){
+    .container{
+        display: block;
+     
+    }
+
+}
+
