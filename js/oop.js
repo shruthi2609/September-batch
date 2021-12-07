@@ -1,16 +1,33 @@
-class Student{
-    //data member - age
-    //member method - modifyAge
-    constructor(n,r){
-     this.fname=n;
-     this.reg=r
-    }
+/*class Product {
+  constructor(p,pr,d){
+      this.pname=p;
+      this.price=pr;
+      this.delivery=d;
+  }
+  updateProductName(newPrName){
+    this.pname=newPrName
+  }
+  displayProductDetails(){
+    console.log(this.pname)
+    console.log(this.price)
+    console.log(this.delivery)
+  }
 }
-let student1=new Student("john",123)
-let student2=new Student("peter",121)
-console.log(student1.fname)
-// class car 
-// class employee
 
+let oven=new Product("philips",12000,true)
+let tv=new Product("sony",45000,false)
+console.log(oven)*/
+function Product1(p,pr,d){
+this.pname=p;
+this.price=pr;
+this.delivery=d;
+}
+Product1.prototype.displayProductDetails=function(){
+  console.log(this.pname)
+  console.log(this.price)
+  console.log(this.delivery)
+}
+let oven1=new Product1("philips",12000,true)
+console.log(oven1)
 
 
