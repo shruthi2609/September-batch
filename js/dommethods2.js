@@ -29,3 +29,8 @@ function generateImage(){
     console.log(img)
     document.body.appendChild(img)
 }
+function deleteElement(){
+    let parent=document.getElementById("empty")
+    let child=document.getElementById("head1")
+    parent.removeChild(child)
+}
