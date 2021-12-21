@@ -74,7 +74,7 @@ function Employee(f,l,des,sal){
     this.salary = sal;
     
 }
-Employee.prototype.getEmployeeDetails=function(){
+/*Employee.prototype.getEmployeeDetails=function(){
   console.log(this.fname)
 }
 Employee.prototype.setEmployeeName=function(updatedName){
@@ -85,7 +85,52 @@ console.log(emp1.fname)
 
 emp1.setEmployeeName("jock")
 
-emp1.getEmployeeDetails()
+emp1.getEmployeeDetails()*/
+
+/*class Employee1{
+  constructor(f,s,d){
+    this.fname=f
+    this.salary=s
+    this.designation=d
+  }
+  getEmployeeDet(){
+    console.log(this.fname)
+  }
+
+}
+let emp1=new Employee1("john","50000","SE")
+let emp2=new Employee1("jock","40000","ASE")
+console.log(emp1)*/
+function Employee1(f,s,d){
+  this.fname=f
+  this.salary=s
+  this.designation=d
+}
+Employee1.prototype.getEmployeeDet=function(){
+  console.log(this.fname)
+}
+let emp1=new Employee1("john","50000","SE")
+emp1.getEmployeeDet()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
